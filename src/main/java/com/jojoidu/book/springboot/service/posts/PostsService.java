@@ -3,12 +3,16 @@ package com.jojoidu.book.springboot.service.posts;
 import com.jojoidu.book.springboot.domain.posts.PostRepository;
 import com.jojoidu.book.springboot.domain.posts.Posts;
 import com.jojoidu.book.springboot.web.dto.PostSaveRequestDto;
+import com.jojoidu.book.springboot.web.dto.PostsListResponseDto;
 import com.jojoidu.book.springboot.web.dto.PostsResponseDto;
 import com.jojoidu.book.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 /**
@@ -40,5 +44,18 @@ public class PostsService {
     public PostsResponseDto findById (Long id) {
         Posts entity = postRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해딩 게시글이 없습니다. id=" + id));
         return new PostsResponseDto(entity);
+    }
+
+    @Transactional(readOnly = true)
+    public List<PostsListResponseDto> findAllDesc(){
+        return postRepository.findAllDesc().stream().map(PostsListResponseDto::new).collect(Collectors.toList());
+    }       //findAllDesc 메소드의 @Transaction 옵션이 추가 readOnly남기면 트랜잭션 범위는 유지되고 조회기능만 남겨 조회속도 개선 CURD전혀 없는 서비스 메소드 사용 추천
+            //.map(PostsListResponseDto::new) 실제로는 .map(posts -> new PostsListResponseDto(posts) postsRepository결과로 넘어온 posts의stream을 map을 통해 PostsListResponseDto변환 ->list
+
+    @Transactional
+    public void delete(Long id){
+        Posts posts = postRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id=" +id));
+
+        postRepository.delete(posts);
     }
 }

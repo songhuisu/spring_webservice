@@ -18,6 +18,7 @@ dependencies {
     implementation('org.assertj:assertj-core:3.24.2')
     implementation('org.springframework.boot:spring-boot-starter-data-jpa') // 스프링부트 버전에 맞춰 자동으로 JPA관련 라이브러리 버전 관리
     implementation('com.h2database:h2') //프로젝트 의존성으로 관리 가능 메모리에서 실행, 애플리케이션 재시작할 때마다 초기화
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
 
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation('org.hamcrest:hamcrest:2.2')

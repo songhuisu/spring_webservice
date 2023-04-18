@@ -4,21 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="TDD 단위테스트&#10;테스트코드 작성&#10;롬복 사용">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/BaseTimeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/posts/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/PostsApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/dto/PostSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
+    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="Spring Data Jpa이용하여 관계형 데이터베이스 객체지향적으로 관리하는 법&#10;jpa/hibernate/spring data jpa관계">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-update.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/IndexControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/posts/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/service/posts/PostsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/PostsApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,7 @@
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -54,22 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;문제&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.jojoidu.book.springboot.web" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostsRepositoryTest.BaseTimeEntity_등록">
+  <component name="RunManager" selected="애플리케이션.com.jojoidu.book.springboot.Application">
     <configuration name="com.jojoidu.book.springboot.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.Application" />
       <module name="spring_webservice.main" />
@@ -149,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PostsRepositoryTest.BaseTimeEntity_등록" />
         <item itemvalue="애플리케이션.com.jojoidu.book.springboot.Application" />
+        <item itemvalue="JUnit.PostsRepositoryTest.BaseTimeEntity_등록" />
         <item itemvalue="JUnit.PostsApiControllerTest.Posts_수정된다" />
         <item itemvalue="JUnit.PostsRepositoryTest.게시글저장_불러오기" />
         <item itemvalue="JUnit.HelloResponseDtoTest.롬복_기능_테스트" />
@@ -180,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681281281644</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Spring Data Jpa이용하여 관계형 데이터베이스 객체지향적으로 관리하는 법&#10;jpa/hibernate/spring data jpa관계">
+      <created>1681394204439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681394204439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +206,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="TDD 단위테스트&#10;테스트코드 작성&#10;롬복 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="TDD 단위테스트&#10;테스트코드 작성&#10;롬복 사용" />
+    <MESSAGE value="Spring Data Jpa이용하여 관계형 데이터베이스 객체지향적으로 관리하는 법&#10;jpa/hibernate/spring data jpa관계" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Data Jpa이용하여 관계형 데이터베이스 객체지향적으로 관리하는 법&#10;jpa/hibernate/spring data jpa관계" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

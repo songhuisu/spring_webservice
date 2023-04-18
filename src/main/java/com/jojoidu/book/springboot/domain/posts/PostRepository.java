@@ -1,6 +1,9 @@
 package com.jojoidu.book.springboot.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import java.util.List;
 
 /**
  * Dao라고 불리는 DB Layer 접근자
@@ -13,8 +16,14 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * 도메인 패키지에서 함께 관리
  *
+ * index머스테치 1> repository2 > PostsService3
  * */
 
 // Posts클래스로 Database를 접근하게 해줄 JpaRepository 생성
+    //
 public interface PostRepository extends JpaRepository<Posts,Long> {
+
+    @Query("SELECT p FROM Posts p ORDER BY p.id DESC")
+    List<Posts> findAllDesc();      // springdatajpa 에서 제공하는 기본메소드만으로 해결 가능
+
 }

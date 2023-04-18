@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+{{>layout/header}}
+
+<h1>게시글 수정</h1>
+
+<div class="col-md-12">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="title">글 번호</label>
+                <input type="text" class="form-control" id="id" value="{{post.id}}" readonly>   <!--1 머스테치는 객체의 필드 접근시 점 (Dot)로 구분-, 즉, Post클래스의 id에대한 접근은 posts.id사용할 수 있음-->
+            </div>
+            <div class="form-group">
+                <label for="title">제목</label>
+                <input type="text" class="form-control" id="title" value="{{post.title}}">   <!--readonly input태그의 읽기 기능만 허용id와 author 수정x-->
+            </div>
+            <div class="form-group">
+                <label for="title">작성자</label>
+                <input type="text" class="form-control" id="author" value="{{post.author}}" readonly>   <!--1-->
+            </div>
+            <div class="form-group">
+                <label for="title">내용</label>
+                <textarea type="text" class="form-control" id="content" value="{{post.content}}">{{post.content}}</textarea> <!--1-->
+            </div>
+        </form>
+
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+
+        <button type="button" class="btn btn-primary" id="btn-update">수정완료</button>
+        <button type="button" class="btn btn-primary" id="btn-delete">삭제</button>
+    </div>
+
+</div>
+{{>layout/footer}}
+</body>
+</html>
