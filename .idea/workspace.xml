@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="Spring Data Jpa이용하여 관계형 데이터베이스 객체지향적으로 관리하는 법&#10;jpa/hibernate/spring data jpa관계">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-update.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/IndexControllerTest.java" afterDir="false" />
+    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="-머스테치 기본 사용법&#10;-스프링 부트의 화면 처리방식&#10;- js 객체를 이용하여 브라우저의 전역 변수 충돌 문제회피 하는 방법">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/posts/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/PostsApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +57,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.jojoidu.book.springboot.web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\song\Documents\DEV\WorkSpace\IntellIJ\spring_webservice\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="애플리케이션.com.jojoidu.book.springboot.Application">
@@ -189,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681394204439</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-머스테치 기본 사용법&#10;-스프링 부트의 화면 처리방식&#10;- js 객체를 이용하여 브라우저의 전역 변수 충돌 문제회피 하는 방법">
+      <created>1681801393477</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681801393477</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +205,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="TDD 단위테스트&#10;테스트코드 작성&#10;롬복 사용" />
     <MESSAGE value="Spring Data Jpa이용하여 관계형 데이터베이스 객체지향적으로 관리하는 법&#10;jpa/hibernate/spring data jpa관계" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Data Jpa이용하여 관계형 데이터베이스 객체지향적으로 관리하는 법&#10;jpa/hibernate/spring data jpa관계" />
+    <MESSAGE value="-머스테치 기본 사용법&#10;-스프링 부트의 화면 처리방식&#10;- js 객체를 이용하여 브라우저의 전역 변수 충돌 문제회피 하는 방법" />
+    <option name="LAST_COMMIT_MESSAGE" value="-머스테치 기본 사용법&#10;-스프링 부트의 화면 처리방식&#10;- js 객체를 이용하여 브라우저의 전역 변수 충돌 문제회피 하는 방법" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
