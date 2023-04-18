@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment=".gitignore 테스트중">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/CustomOAuth2UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/LoginUserArgumentResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/SessionUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/user/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/user/UserRepository.java" afterDir="false" />
+    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="Google소셜 로그인 구현">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +20,37 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring_webservice" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring_webservice" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring_webservice" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,6 +70,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2ODx1E9f3wXJnYSXW0SAUoV799u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,17 +81,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.jojoidu.book.springboot.web" />
@@ -76,7 +100,7 @@
       <recent name="C:\Users\song\Documents\DEV\WorkSpace\IntellIJ\spring_webservice\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.com.jojoidu.book.springboot.Application">
+  <component name="RunManager" selected="Gradle.spring_webservice [test]">
     <configuration name="com.jojoidu.book.springboot.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.Application" />
       <module name="spring_webservice.main" />
@@ -90,37 +114,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloResponseDtoTest.롬복_기능_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_webservice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jojoidu.book.springboot.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jojoidu.book.springboot" />
-      <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.HelloResponseDtoTest" />
-      <option name="METHOD_NAME" value="롬복_기능_테스트" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostsApiControllerTest.Posts_수정된다" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_webservice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jojoidu.book.springboot.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jojoidu.book.springboot.web" />
-      <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.web.PostsApiControllerTest" />
-      <option name="METHOD_NAME" value="Posts_수정된다" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="spring_webservice [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="PostsRepositoryTest.BaseTimeEntity_등록" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_webservice.test" />
@@ -138,29 +151,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostsRepositoryTest.게시글저장_불러오기" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_webservice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jojoidu.book.springboot.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jojoidu.book.springboot.domain.posts" />
-      <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.domain.posts.PostsRepositoryTest" />
-      <option name="METHOD_NAME" value="게시글저장_불러오기" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="spring_webservice의 전부 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_webservice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring_webservice의 전부" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_webservice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.spring_webservice [test]" />
         <item itemvalue="애플리케이션.com.jojoidu.book.springboot.Application" />
+        <item itemvalue="JUnit.spring_webservice의 전부 (1)" />
+        <item itemvalue="JUnit.spring_webservice의 전부" />
         <item itemvalue="JUnit.PostsRepositoryTest.BaseTimeEntity_등록" />
-        <item itemvalue="JUnit.PostsApiControllerTest.Posts_수정된다" />
-        <item itemvalue="JUnit.PostsRepositoryTest.게시글저장_불러오기" />
-        <item itemvalue="JUnit.HelloResponseDtoTest.롬복_기능_테스트" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681802874386</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Google소셜 로그인 구현">
+      <created>1681817641525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681817641525</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +236,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -228,7 +254,18 @@
     <MESSAGE value="Spring Data Jpa이용하여 관계형 데이터베이스 객체지향적으로 관리하는 법&#10;jpa/hibernate/spring data jpa관계" />
     <MESSAGE value="-머스테치 기본 사용법&#10;-스프링 부트의 화면 처리방식&#10;- js 객체를 이용하여 브라우저의 전역 변수 충돌 문제회피 하는 방법" />
     <MESSAGE value=".gitignore 테스트중" />
-    <option name="LAST_COMMIT_MESSAGE" value=".gitignore 테스트중" />
+    <MESSAGE value="Google소셜 로그인 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="Google소셜 로그인 구현" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
