@@ -15,6 +15,7 @@ public class OAuthAttributes {
     private String email;
     private String picture;
 
+
     @Builder
     public OAuthAttributes(Map<String, Object> attributes, String nameAttributekey, String name, String email, String picture){
         this.attributes = attributes;
@@ -23,7 +24,10 @@ public class OAuthAttributes {
         this.email = email;
         this.picture = picture;
     }
-
+    /*
+     *
+     * OAuth2User에서 반환하는 사용자 정보는 Map이기 때문에 값 하나하나를 반환해야함
+     * */
     public static OAuthAttributes of(String registrationId, String userNameAttributeName, Map<String, Object> attributes){
 
         if("naver".equals(registrationId)) {

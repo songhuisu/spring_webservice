@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="Google소셜 로그인 구현">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="네이버 소셜 로그인 구현 완료">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/JpaConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/HelloControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,7 @@
       <recent name="C:\Users\song\Documents\DEV\WorkSpace\IntellIJ\spring_webservice\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.spring_webservice [test]">
+  <component name="RunManager" selected="JUnit.HelloControllerTest.hello가_리턴">
     <configuration name="com.jojoidu.book.springboot.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.Application" />
       <module name="spring_webservice.main" />
@@ -135,17 +137,17 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PostsRepositoryTest.BaseTimeEntity_등록" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelloControllerTest.hello가_리턴" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_webservice.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jojoidu.book.springboot.domain.posts.*" />
+          <option name="PATTERN" value="com.jojoidu.book.springboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jojoidu.book.springboot.domain.posts" />
-      <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.domain.posts.PostsRepositoryTest" />
-      <option name="METHOD_NAME" value="BaseTimeEntity_등록" />
+      <option name="PACKAGE_NAME" value="com.jojoidu.book.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.HelloControllerTest" />
+      <option name="METHOD_NAME" value="hello가_리턴" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelloControllerTest.hello가_리턴" />
         <item itemvalue="Gradle.spring_webservice [test]" />
         <item itemvalue="애플리케이션.com.jojoidu.book.springboot.Application" />
         <item itemvalue="JUnit.spring_webservice의 전부 (1)" />
         <item itemvalue="JUnit.spring_webservice의 전부" />
-        <item itemvalue="JUnit.PostsRepositoryTest.BaseTimeEntity_등록" />
       </list>
     </recent_temporary>
   </component>
@@ -228,8 +230,18 @@
       <option name="project" value="LOCAL" />
       <updated>1681817641525</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="네이버 소셜 로그인 구현 완료">
+      <created>1681825015602</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681825015602</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="application.properties" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -255,7 +267,8 @@
     <MESSAGE value="-머스테치 기본 사용법&#10;-스프링 부트의 화면 처리방식&#10;- js 객체를 이용하여 브라우저의 전역 변수 충돌 문제회피 하는 방법" />
     <MESSAGE value=".gitignore 테스트중" />
     <MESSAGE value="Google소셜 로그인 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="Google소셜 로그인 구현" />
+    <MESSAGE value="네이버 소셜 로그인 구현 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="네이버 소셜 로그인 구현 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

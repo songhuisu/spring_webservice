@@ -1,10 +1,15 @@
 package com.jojoidu.book.springboot;
 
+import com.jojoidu.book.springboot.config.auth.SecurityConfig;
 import com.jojoidu.book.springboot.web.HelloController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
+import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.stereotype.Component;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -14,13 +19,17 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 // 테스트 코드 검증 was실행하지 않고 ,,
 @RunWith(SpringRunner.class)    // 테스트를 진행할 때 JUnit에 내장된 실행자 외에 다른 실행자를 실행시킴 springbootrunner 실행자 사용 스프링부트 테스트와 JUnit사이 연결
-@WebMvcTest(controllers = HelloController.class)    // Web(springweb MVC)에 집중할 수 있는 어노테이션 @Controller, @ControllerAdvice 사용 @service, component, repository 사용 x
+@WebMvcTest(controllers = HelloController.class,
+excludeFilters = {
+        @ComponentScan.Filter(type= FilterType.ASSIGNABLE_TYPE,classes = SecurityConfig.class)
+})    // Web(springweb MVC)에 집중할 수 있는 어노테이션 @Controller, @ControllerAdvice 사용 @service, component, repository 사용 x
 // 컨트롤러만 사용하기 때문에 선언
 public class HelloControllerTest {
 
     @Autowired      // 스프링이 관리하는 Bean주입 받음
     private MockMvc mvc;        // 웹API 테스트할 때 사용. 테스트 시작점 . HTTP GET,POST api 테스트 할 수 있음
 
+    @WithMockUser(roles = "USER")
     @Test
     public void hello가_리턴() throws Exception{
         String hello = "hello";
