@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="네이버 소셜 로그인 구현 완료">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/JpaConfig.java" afterDir="false" />
+    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="gradle test구동">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/HelloControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,17 +77,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "DBNavigator.Project.DatabaseBrowserSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.jojoidu.book.springboot.web" />
@@ -102,7 +96,7 @@
       <recent name="C:\Users\song\Documents\DEV\WorkSpace\IntellIJ\spring_webservice\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HelloControllerTest.hello가_리턴">
+  <component name="RunManager" selected="Gradle.spring_webservice [test]">
     <configuration name="com.jojoidu.book.springboot.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.Application" />
       <module name="spring_webservice.main" />
@@ -171,8 +165,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HelloControllerTest.hello가_리턴" />
         <item itemvalue="Gradle.spring_webservice [test]" />
+        <item itemvalue="JUnit.HelloControllerTest.hello가_리턴" />
         <item itemvalue="애플리케이션.com.jojoidu.book.springboot.Application" />
         <item itemvalue="JUnit.spring_webservice의 전부 (1)" />
         <item itemvalue="JUnit.spring_webservice의 전부" />
@@ -237,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681825015602</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="gradle test구동">
+      <created>1682312753661</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682312753661</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -268,7 +269,8 @@
     <MESSAGE value=".gitignore 테스트중" />
     <MESSAGE value="Google소셜 로그인 구현" />
     <MESSAGE value="네이버 소셜 로그인 구현 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="네이버 소셜 로그인 구현 완료" />
+    <MESSAGE value="gradle test구동" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle test구동" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
