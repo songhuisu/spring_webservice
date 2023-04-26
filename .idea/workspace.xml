@@ -4,8 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="gradle test구동">
+    <list default="true" id="3b9561b7-458f-48c9-b09b-e53bec368d4a" name="변경" comment="gradle 버전">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/CustomOAuth2UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/CustomOAuth2UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/LoginUserArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/LoginUserArgumentResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/BaseTimeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/posts/PostsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/service/posts/PostsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoidu/book/springboot/web/PostsApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/HelloControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/HelloResponseDtoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/HelloResponseDtoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/IndexControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/IndexControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoidu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +75,8 @@
         <option value="FxmlFile" />
         <option value="Kotlin Class" />
         <option value="Enum" />
-        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -79,36 +99,55 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "last_opened_file_path": "C:/Users/song/.gradle/caches/modules-2/files-2.1/org.junit/junit-bom/5.9.2",
+    "project.structure.last.edited": "전역 라이브러리",
+    "project.structure.proportion": "0.1518405",
+    "project.structure.side.proportion": "0.35740072",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "DBNavigator.Project.DatabaseBrowserSettings"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jojoidu.book.springboot.web.dto" />
       <recent name="com.jojoidu.book.springboot.web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\song\Documents\DEV\WorkSpace\IntellIJ\spring_webservice\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.spring_webservice [test]">
-    <configuration name="com.jojoidu.book.springboot.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.Application" />
-      <module name="spring_webservice.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jojoidu.book.springboot.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle :compileJava" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.spring_webservice의 전부">
+    <configuration name="spring_webservice [:compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="spring_webservice [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -131,23 +170,15 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HelloControllerTest.hello가_리턴" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_webservice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jojoidu.book.springboot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jojoidu.book.springboot" />
-      <option name="MAIN_CLASS_NAME" value="com.jojoidu.book.springboot.HelloControllerTest" />
-      <option name="METHOD_NAME" value="hello가_리턴" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="spring_webservice의 전부 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_webservice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="spring_webservice의 전부 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="spring_webservice의 전부 (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_webservice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -165,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.spring_webservice [test]" />
-        <item itemvalue="JUnit.HelloControllerTest.hello가_리턴" />
-        <item itemvalue="애플리케이션.com.jojoidu.book.springboot.Application" />
-        <item itemvalue="JUnit.spring_webservice의 전부 (1)" />
         <item itemvalue="JUnit.spring_webservice의 전부" />
+        <item itemvalue="Gradle.spring_webservice [:compileJava]" />
+        <item itemvalue="JUnit.spring_webservice의 전부 (3)" />
+        <item itemvalue="Gradle.spring_webservice [test]" />
+        <item itemvalue="JUnit.spring_webservice의 전부 (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682312753661</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Db연결">
+      <created>1682430509323</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682430509323</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -270,7 +308,10 @@
     <MESSAGE value="Google소셜 로그인 구현" />
     <MESSAGE value="네이버 소셜 로그인 구현 완료" />
     <MESSAGE value="gradle test구동" />
-    <option name="LAST_COMMIT_MESSAGE" value="gradle test구동" />
+    <MESSAGE value="Db연결" />
+    <MESSAGE value="gradle 버전 수정 test오류 해결" />
+    <MESSAGE value="gradle 버전" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle 버전" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -285,5 +326,8 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_webservice$spring_webservice___1_.ic" NAME="spring_webservice의 전부 (1) 커버리지 결과" MODIFIED="1682492472505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

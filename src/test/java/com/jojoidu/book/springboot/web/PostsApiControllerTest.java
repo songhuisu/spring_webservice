@@ -2,8 +2,8 @@ package com.jojoidu.book.springboot.web;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jojoidu.book.springboot.domain.posts.PostRepository;
 import com.jojoidu.book.springboot.domain.posts.Posts;
+import com.jojoidu.book.springboot.domain.posts.PostsRepository;
 import com.jojoidu.book.springboot.web.dto.PostSaveRequestDto;
 import com.jojoidu.book.springboot.web.dto.PostsUpdateRequestDto;
 import org.junit.After;
@@ -22,13 +22,12 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -41,7 +40,7 @@ public class PostsApiControllerTest {
     private TestRestTemplate restTemplate;
 
     @Autowired
-    private PostRepository postsRepository;
+    private PostsRepository postsRepository;
 
     @Autowired
     private WebApplicationContext context;

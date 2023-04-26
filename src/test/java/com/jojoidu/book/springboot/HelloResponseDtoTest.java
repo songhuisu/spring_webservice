@@ -1,8 +1,9 @@
 package com.jojoidu.book.springboot;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import com.jojoidu.book.springboot.web.dto.HelloResponseDto;
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
 

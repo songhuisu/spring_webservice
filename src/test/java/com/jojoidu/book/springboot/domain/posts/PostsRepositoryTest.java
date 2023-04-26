@@ -1,6 +1,5 @@
 package com.jojoidu.book.springboot.domain.posts;
 
-import javafx.geometry.Pos;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import java.time.LocalDateTime;
 import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * springData Jpa 테스트 코드
@@ -36,11 +35,11 @@ import java.util.List;
 public class PostsRepositoryTest {
 
     @Autowired
-    PostRepository postRepository;
+    PostsRepository postsRepository;
 
     @After //1
     public void cleanup(){
-        postRepository.deleteAll();
+        postsRepository.deleteAll();
     }
 
     @Test
@@ -49,14 +48,14 @@ public class PostsRepositoryTest {
         String title = "테스트 게시글";
         String content = "테스트 본문";
 
-        postRepository.save(Posts.builder()     //2
+        postsRepository.save(Posts.builder()     //2
                 .title(title)
                 .content(content)
                 .author("jojoldu@gmail.com")
                 .build());
 
         //when
-        List<Posts> postsList = postRepository.findAll();   //3
+        List<Posts> postsList = postsRepository.findAll();   //3
 
         //then
         Posts posts = postsList.get(0);
@@ -69,14 +68,14 @@ public class PostsRepositoryTest {
 
         //given
         LocalDateTime now = LocalDateTime.of(2023,4,13,0,0,0);
-        postRepository.save(Posts.builder()
+        postsRepository.save(Posts.builder()
                 .title("title")
                 .content("content")
                 .author("author")
                 .build());
 
         //when
-        List<Posts> postsList = postRepository.findAll();
+        List<Posts> postsList = postsRepository.findAll();
 
         //then
         Posts posts = postsList.get(0);

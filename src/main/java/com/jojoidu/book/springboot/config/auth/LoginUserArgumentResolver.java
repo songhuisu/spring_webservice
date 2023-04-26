@@ -17,7 +17,6 @@ public class LoginUserArgumentResolver implements HandlerMethodArgumentResolver 
 
     private final HttpSession httpSession;
 
-
     @Override
     public boolean supportsParameter(MethodParameter parameter) {   // 1 컨트롤러 메서드의 특정 파라미터를 지원하는지 판단 , @LoginUser 어노테이션이 붙어있고, 파라미터 클래스 타입이 SessionUser.class인 경우 true반환
         boolean isLoginUserAnnotation = parameter.getParameterAnnotation(LoginUser.class) != null;

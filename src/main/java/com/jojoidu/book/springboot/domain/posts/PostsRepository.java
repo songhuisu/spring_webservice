@@ -21,7 +21,7 @@ import java.util.List;
 
 // Posts클래스로 Database를 접근하게 해줄 JpaRepository 생성
     //
-public interface PostRepository extends JpaRepository<Posts,Long> {
+public interface PostsRepository extends JpaRepository<Posts,Long> {
 
     @Query("SELECT p FROM Posts p ORDER BY p.id DESC")
     List<Posts> findAllDesc();      // springdatajpa 에서 제공하는 기본메소드만으로 해결 가능
